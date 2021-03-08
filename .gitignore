@@ -1,3 +1,6 @@
 *.o 
 *.out 
+tests.out
 *.out.dSYM
+.exercism
+*.json
