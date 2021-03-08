@@ -15,7 +15,6 @@ bool is_pangram(const char * str) {
         if ((c >= 'a' ) && (c <= 'z')) {
             ic = c - 'a';
             counts[ic]++;
-            printf("c=%c, ic=%d, count=%hu\n", c, ic, counts[ic]);
         }
     } while((c = *++str) != '\0');
 
