@@ -20,7 +20,3 @@ resistor_band_t * colors(void) {
     ptr[WHITE] = WHITE;
     return ptr;
 }
-
-void release(resistor_band_t * ptr) {
-    free(ptr);
-}

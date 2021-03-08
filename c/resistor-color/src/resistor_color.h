@@ -21,6 +21,5 @@ static const uint8_t n_colors = 10;
 
 resistor_band_t * colors(void);
 int color_code(resistor_band_t);
-void release(resistor_band_t *);
 
 #endif
