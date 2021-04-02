@@ -1,6 +1,6 @@
 #include "word_count.h"
 
-bool is_punctuation(char c) {
+inline bool is_punctuation(char c) {
   const char * ignore = ":!&@$%^&.";
   for (unsigned int i=0; i<strlen(ignore); i++) {
     if (c == ignore[i]) {
@@ -10,11 +10,11 @@ bool is_punctuation(char c) {
   return false;
 }
 
-bool is_delimiter(char c) {
+inline bool is_delimiter(char c) {
   return (bool)((c == ' ') || (c == ',') || (c == '\n'));
 }
 
-bool is_digit(char c) {
+inline bool is_digit(char c) {
   return (bool) (c >= '0' && c <= '9');
 }
 
